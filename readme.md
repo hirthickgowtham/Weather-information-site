@@ -1,23 +1,30 @@
-# Weather Info site
+# **Weather Info Site**
 
-## Features
+## **Features**
 
-    ### Authetication
-        - For authentication i am using a jwt(JSON Web Token) 
-        - I am cookies for Authenticity validation
-    ### Backend 
-        - I am using **Nodejs** and **Expressjs**
-    ### Frontend
-        - I am using a **Reactjs**
-    ### DataBase
-        - I am **PostgreSQL** for handle a structured data
-    
-## Previews Images
+### **Authentication**
+- For authentication, I am using a **JWT (JSON Web Token)**.
+- I am using cookies for authenticity validation.
 
-    ![alt text](2024-12-10.png)
-    ![alt text](<2024-12-10 (1).png>)
-    ![alt text](<2024-12-10 (2).png>)
-    ![alt text](<2024-12-10 (3).png>)
-    ![alt text](<2024-12-10 (5).png>)
-    ![alt text](<2024-12-10 (6).png>)
-    ![alt text](<2024-12-10 (7).png>)
+### **Backend**
+- Built with **Node.js** and **Express.js**.
+
+### **Frontend**
+- Developed using **React.js**.
+
+### **Database**
+- Utilized **PostgreSQL** to handle structured data.
+
+---
+
+## **Preview Images**
+
+Here are the screenshots of the project:
+
+![Preview 1](2024-12-10.png)  
+![Preview 2](2024-12-10%20(1).png)  
+![Preview 3](2024-12-10%20(2).png)  
+![Preview 4](2024-12-10%20(3).png)  
+![Preview 5](2024-12-10%20(5).png)  
+![Preview 6](2024-12-10%20(6).png)  
+![Preview 7](2024-12-10%20(7).png)
