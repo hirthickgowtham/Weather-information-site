@@ -17,6 +17,7 @@ export default function Register(){
     const [clickCheck,setClick] = useState(false)
     const navigate = useNavigate()
     
+    
 
     useEffect(()=>{
         if(pass1 === pass2){
@@ -30,6 +31,24 @@ export default function Register(){
         }
     
     },[pass1,pass2])
+
+
+    useEffect(()=>{
+
+        
+            const validateEmail = async () => {
+                if (isValidEmail(email)) {
+                    const response = await UseApi({ path: "userCheck", body: { email } });
+                    setcheck(!response);
+                    setClick(true);
+                } else {
+                    setcheck(false);
+                    setClick(false);
+                }
+            };
+            validateEmail();
+
+    },[email])
 
 
     function isValidEmail(email) {
@@ -54,7 +73,7 @@ export default function Register(){
 
     }
 
-
+    
 
    async function handleChange(e){
         const {name,value} = e.target
@@ -62,13 +81,7 @@ export default function Register(){
         switch (name) {
             case "email":
                 setEmail(value.trim())
-                if(isValidEmail(email)){
-                setcheck(!await UseApi({path:"userCheck",body:{"email":email}}))
-                setClick(true)
-                }else{
-                    setcheck(false)
-                    setClick(false)
-                }
+               
                 break;
             case "pass1":
                 setpass1(value.trim())

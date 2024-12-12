@@ -15,7 +15,6 @@ server.use(body.urlencoded({extended:true,limit:'100mb'}));
 server.use(body.json({limit:'100mb'}));
 server.use(cors({ origin: process.env.React_path }));
 
-console.log(process.env.Data_base_pass)
 
 const db = new pg.Client({
     host:"localhost",
